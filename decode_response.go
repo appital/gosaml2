@@ -25,10 +25,10 @@ import (
 	"encoding/xml"
 
 	"github.com/beevik/etree"
+	rtvalidator "github.com/mattermost/xml-roundtrip-validator"
 	"github.com/russellhaering/gosaml2/types"
 	dsig "github.com/russellhaering/goxmldsig"
 	"github.com/russellhaering/goxmldsig/etreeutils"
-	rtvalidator "github.com/mattermost/xml-roundtrip-validator"
 )
 
 func (sp *SAMLServiceProvider) validationContext() *dsig.ValidationContext {
